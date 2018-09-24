@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" 
+	layout="vertical" 
+	xmlns:comp="views.*" 
+	preloader="iamjosh.samples.preloader.CustomPreloader" 
+	verticalScrollPolicy="off" horizontalScrollPolicy="off" backgroundColor="#14B3B1" xmlns:fabulousFlex="fabulousFlex.*">
+	
+	
+	<mx:Script>
+        <![CDATA[
+            import mx.graphics.*;
+			[Bindable]
+			public var tArea:RoundedRectangle;
+			
+           	private function init():void{
+              	tArea = new RoundedRectangle(0,0, kontakt.width, kontakt.height, 5);
+           	}
+        ]]>
+    </mx:Script>
+	
+	<mx:Style source="/assets/CSS/style.css"/>  
+	
+	<mx:Dissolve id="dissolveP2"
+        duration="400"
+        target="{Kontakt}" 
+        alphaFrom="0.0" alphaTo="1.0" 
+        targetArea="{tArea}" color="#0a71a7"/>	
+        
+    <mx:Blur id="unblurImage" duration="1000" 
+     blurXFrom="10.0" blurXTo="0.0" 
+     blurYFrom="10.0" blurYTo="0.0"/>
+	
+	<mx:Glow id="glowImage" duration="1000" 
+	     alphaFrom="1" alphaTo=".3"
+	     blurXFrom="0.0" blurXTo="55"
+	     blurYFrom="0.0" blurYTo="55"
+	     color="#FFFF00"/>
+	
+	<mx:ApplicationControlBar id="appCon" horizontalAlign="center" width="50%" creationCompleteEffect="glowImage">
+		<mx:LinkBar id="myLinkBar" dataProvider="view" creationCompleteEffect="unblurImage" dropShadowEnabled="true"/>
+	</mx:ApplicationControlBar>
+	
+	<mx:VBox height="6"/>
+	<mx:SWFLoader id="myBanner" source="assets/banner/ss.swf" addedEffect="glowImage"/>	
+	<mx:VBox height="5"/>
+	
+	<mx:Panel id="appPan" 
+		width="810" 
+		height="500" 
+		layout="absolute" 
+		horizontalCenter="0" 
+		y="120" 
+		horizontalScrollPolicy="off"
+		roundedBottomCorners="true">
+		<mx:ViewStack id="view" resizeToContent="true" width="100%">
+			<comp:Home id="home" label="O firmie" showEffect="dissolveP2"/>
+			<comp:Oferta id="oferta" label="Oferta" showEffect="dissolveP2"/>
+			<comp:Gallery id="gallery" label="Galeria" showEffect="dissolveP2"/>
+			<comp:Cennik id="cennik" label="Cennik" showEffect="dissolveP2"/>
+			<comp:Kontakt id="kontakt" label="Kontakt" showEffect="dissolveP2"/>
+		</mx:ViewStack>
+		
+	</mx:Panel>
+	
+	<mx:Label text="Created by El Instal 2009" styleName="createdBy"/>
+	
+</mx:Application>

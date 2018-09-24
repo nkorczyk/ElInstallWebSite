@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" creationComplete="init();">
+	
+	<mx:Script>
+        <![CDATA[
+            import mx.events.DateChooserEvent;
+            import mx.graphics.*;
+			
+			[Bindable]
+			public var tArea:RoundedRectangle;
+			
+            private function dateChooser_init():void {
+                myDC.monthNames=['Styczeń', 'Luty', 'Marzec', 'Kwiecień', 'Maj', 'Czerwiec', 'Lipiec', 'Sierpień', 'Wrzesień', 'Październik', 'Listopad', 'Grudzień'];
+                myDC.dayNames=['Nd', 'Pn', 'Wt', 'Śr', 'Cz', 'Pt', 'So'];
+            }
+            
+           	private function init():void{
+              	tArea = new RoundedRectangle(0,0, myHbox.width, myHbox.height, 5);
+           	}
+        ]]>
+    </mx:Script>
+
+	
+	<mx:Glow id="glowImage" duration="250" 
+	     alphaFrom="1" alphaTo=".3"
+	     blurXFrom="0.0" blurXTo="15"
+	     blurYFrom="0.0" blurYTo="15"
+	     color="#0a71a7"/>	
+
+	<mx:Dissolve id="dissolveP2"
+        duration="1500"
+        target="{myHbox}" 
+        alphaFrom="0.0" alphaTo="1.0" 
+        targetArea="{tArea}" color="#0a71a7"/>
+     
+	<mx:HBox id="myHbox" paddingLeft="5" paddingTop="5" addedEffect="dissolveP2" verticalScrollPolicy="off">
+		<mx:SWFLoader source="assets/banner/clock.swf" addedEffect="glowImage"/>
+		<mx:VBox y="0" horizontalCenter="0"  width="333" verticalScrollPolicy="off">		
+			<mx:Text width="330" text="	Witam wszystkich zainteresowanych i zapraszam do współpracy." verticalCenter="-16" x="0"/>
+			<mx:Text width="330" text="	Jeśli szukasz firmy, która świadczy usługi w zakresie profesjonalnej i ekonomicznej ekspooatacji instalacji elektrycznej, to dobrze trafiłeś!"/>
+			<mx:Text width="330" text=" Moja firma czeka na Ciebie i podejmie się każdego zlecenia, doradzi rzetelnie i fachowo w różnych dziedzinach jakimi się zajmuje:"/>
+			
+			<mx:Text width="316">
+				<mx:htmlText>
+					<![CDATA[
+• Instalacje elektryczne 
+  (mieszkań, sklepów, banków itd.)
+• Instalacje piorunochronne (odgromowe)
+• Automatyka maszyn AC/DC
+• Automatyka budynków w oparciu 
+  o system LUXOR
+• Sieci komputerowe
+• Monitoring i telewizja cyfrowa
+• Pomiary elektryczne i odbiorcze
+
+  Wybierając naszą firmę postaramy się 
+  sumiennie wykonać dane nam zlecenie.
+  
+  Na wykonane przez nas instalacje 
+  elektryczne udzielamy 5 lat 
+  gwarancji!!! 						
+					]]>
+				</mx:htmlText>
+			</mx:Text>
+		
+			<mx:Text width="330" text="Dziękuję i zapraszam do współpracy" textAlign="center"/>
+		</mx:VBox>
+		<mx:DateChooser id="myDC" addedEffect="glowImage" creationComplete="dateChooser_init();"/>
+	</mx:HBox>
+</mx:Canvas>

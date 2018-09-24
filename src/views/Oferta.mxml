@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml">
+	
+	<mx:VBox id="myVbox" horizontalCenter="0" paddingTop="5" >
+		<mx:Text width="490">
+			<mx:htmlText>
+				<![CDATA[<b>Oferta:</b>
+				
+• Instalacje elektryczne
+	-	współczesny i ekonomiczny montaż instalacji elektrycznych w 
+		nowo powstałych budowlach, obiektach mieszkalnych i 
+		przemysłowych
+	-	modernizacja instalacji elektrycznej istniejącej już instalacji
+	-	montaż, demontaż rozdzielnic elektrycznych
+	-	montaż osprzętu (gniazd, wyłączników, lamp, wentylatorów itp.)
+	-	montaż przyłączy energetycznych
+	-	wykonanie uziomów ochronnych, wyrównawczych
+
+• Instalacje piorunoochronne
+	-	wykonanie współczesnej instalacji odgromowej
+	-	montaż przepięciówek w rozdzielnicy
+	-	wykonanie otokowej wokół budynku
+
+• Pół inteligentne instalacje elektryczne
+	-	automatyka budynku w oparciu o system LUXOR
+	-	różnego rodzaju sterownie oświetleniem, rolet itp.
+
+• Automatyka maszyn elektrycznych
+	-	sterownie silnikami DC i AC
+	-	sterowanie przepompowni
+	-	sterownie wentylatorami
+
+• Sieci komputerowe
+	-	wykonanie sieci komputerowych (okablowanie)
+	-	wykonanie i modernizacja serwerowni
+	-	konfiguracja sieci
+	-	montaż osprzętu sieciowego
+
+• Instalacje alarmowe
+	-	wykonanie instalacji alarmowych(sygnalizacji włamania, pożaru)
+
+• Instalacja dodatkowa
+	-	wykonanie instalacji monitoringu z możliwością rejestracji
+	-	Instalacje domofonowe i videodomofonowe
+	-	Instalacje głośnikowe
+	-	Instalacje telewizji cyfrowej i siatkowej
+
+• Pomiary elektryczne (wystawienie protokołów odbiorczych i okresowych)
+	-	pomiar parametrów pętli zwarcia
+	-	pomiary rezystancji uziemień
+	-	pomiar parametrów wyłączników różnicowo – prądowych RCD
+	-	pomiar rezystancji izolacji
+	-	pomiar rezystancji izolacji przewodów wielożyłowych
+	-	niskonapięciowy pomiar rezystancji
+		1.	pomiar ciągłości połączeń ochronnych i wyrównawczych
+		2.	pomiar ciągłości obwodów
+	-	badania elektronarzędzi
+	-	sprawdzenie kolejności faz
+				]]>
+			</mx:htmlText>
+		</mx:Text>
+	</mx:VBox>	
+</mx:Canvas>

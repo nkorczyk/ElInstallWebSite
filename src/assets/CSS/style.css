@@ -1,0 +1,127 @@
+/* CSS file */
+
+Application {
+    backgroundGradientColors: #02fffc, #000000;
+   	backgroundGradientAlphas: 0.74, 0.37;
+}
+
+ApplicationControlBar {
+   highlightAlphas: 0.94, 0.33;
+   fillAlphas: 0.71, 1;
+   fillColors: #ff6600, #ffff00;
+   backgroundAlpha: 0.94;
+   cornerRadius: 11;
+   dropShadowEnabled: true;
+}
+
+Panel
+{
+	background-color: #3e3e3e;
+	border-color: #22201e;
+	header-height:60;
+	border-alpha: 1;
+	corner-radius: 10;
+	dropShadowStyleName: panelDropShadow;
+/* 	border-skin: ClassReference("assets.skins.SmartPanelSkin"); */
+	dropShadowEnabled: true;
+	title-style-name: headerStyle;
+	/* headerSkin: ClassReference("assets.skins.HeaderSkin");*/
+}
+
+.panelDropShadow
+{
+	distance:5;
+	size:28;
+	alpha:0.7;
+}
+
+.headerStyle
+{
+	border-skin: Embed(source='assets/images/header_bg.png', scaleGridLeft=20, scaleGridRight=200, scaleGridTop=40,scaleGridBottom=42);
+}
+
+Label{
+	font-size:13;
+	font-style:normal;
+	color:#F8E55B;
+}
+
+ScrollBar{
+	trackSkin: Embed(source='assets/images/track.png', scaleGridLeft=6, scaleGridRight=7, scaleGridTop=26,scaleGridBottom=330);
+	thumbUpSkin:Embed(source='assets/images/thumb_up.png', scaleGridLeft=8, scaleGridRight=9, scaleGridTop=8,scaleGridBottom=120);
+	thumbOverSkin:Embed(source='assets/images/thumb_over.png', scaleGridLeft=8, scaleGridRight=9, scaleGridTop=8,scaleGridBottom=120);
+	thumbDownSkin:Embed(source='assets/images/thumb_over.png', scaleGridLeft=8, scaleGridRight=9, scaleGridTop=8,scaleGridBottom=120); 
+	upArrowUpSkin:Embed(source='assets/images/top_arrow_up.png');
+	upArrowDownSkin:Embed(source='assets/images/top_arrow_over.png');
+	upArrowOverSkin:Embed(source='assets/images/top_arrow_over.png');
+	downArrowUpSkin:Embed(source='assets/images/bottom_arrow_up.png');
+	downArrowDownSkin:Embed(source='assets/images/bottom_arrow_over.png');
+	downArrowOverSkin:Embed(source='assets/images/bottom_arrow_over.png'); 
+}
+
+.myButton {
+   cornerRadius: 12;
+   fillAlphas: 0.91, 0.67, 0.88, 0.67;
+   fillColors: #0b0702, #8b4b00, #623908, #3d1b03;
+   color: #cdbca7;
+   textRollOverColor: #000000;
+   borderColor: #eab764;
+   themeColor: #d8bf90;
+   fontWeight: bold;
+}
+
+.myLinkButton {
+   rollOverColor: #a3651f;
+   selectionColor: #6d3006;
+   color: #0b333c;
+   textRollOverColor: #000000;
+   textSelectedColor: #ebc07a;
+   paddingLeft: 20;
+   paddingRight: 20;
+   fontWeight: bold;
+   textDecoration: underline;
+}
+
+DateChooser, .dateChooserStyleName
+{
+	background-color: #2b2a2a;
+	dropShadowEnabled: true;
+	border-color: #787370;
+	color: #ffffff;
+	header-colors: #44413d, #2d2b28;
+	prevMonthUpSkin: Embed(source='assets/images/prevMonthUpSkin.png');
+	nextMonthUpSkin: Embed(source='assets/images/nextMonthUpSkin.png');
+	prevMonthDownSkin: Embed(source='assets/images/prevMonthUpSkin.png');
+	nextMonthDownSkin: Embed(source='assets/images/nextMonthUpSkin.png');
+	prevMonthOverSkin: Embed(source='assets/images/prevMonthOverSkin.png');
+	nextMonthOverSkin: Embed(source='assets/images/nextMonthOverSkin.png');
+	headerStyleName: dateChooserHeader;
+	corner-radius:8;
+	roll-over-color: #e5b421;
+	selectionColor: #ff9c00;
+}
+.dateChooserHeader
+{
+ 	font-weight:normal;
+}
+
+DataGrid {
+   backgroundAlpha: 0.83;
+   backgroundColor: #000000;
+   alternatingItemColors: #ffffff, #eff1f2;
+   headerColors: #f99500, #ffff00;
+   horizontalGridLines: false;
+   horizontalGridLineColor: #ff0000;
+   verticalGridLines: true;
+   rollOverColor: #aadeef;
+   borderThickness: 0;
+   borderColor: #b7babc;
+   textIndent: 0;
+   dropShadowEnabled: true;
+}
+
+.createdBy{
+	font-size:9;
+	font-style:italic;
+	color:#000000
+}

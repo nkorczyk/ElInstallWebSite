@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml">
+	
+	<mx:XMLList id="ceny1">
+		<ceny1>
+			<lp>1</lp>
+			<produkt>jedno fazowe gniazdo elektryczne</produkt>
+			<cena>60,00 zł</cena>
+		</ceny1>
+		<ceny1>
+			<lp>2</lp>
+			<produkt>trójfazowe gniazdo elektryczne</produkt>
+			<cena>95,00 zł</cena>
+		</ceny1>
+		<ceny1>
+			<lp>3</lp>
+			<produkt>zasilanie wentylatora</produkt>
+			<cena>60,00 zł</cena>
+		</ceny1>
+		<ceny1>
+			<lp>4</lp>
+			<produkt>łącznik instalacyjny</produkt>
+			<cena>15,00 zł</cena>
+		</ceny1>
+		<ceny1>
+			<lp>5</lp>
+			<produkt>łącznik schodowy</produkt>
+			<cena>60,00 zł</cena>
+		</ceny1>
+		<ceny1>
+			<lp>6</lp>
+			<produkt>Łącznik sterowania roletami elektrycznymi 
+z wyprowadzeniem pod silnik</produkt>
+			<cena>95,00 zł</cena>
+		</ceny1>
+		<ceny1>
+			<lp>7</lp>
+			<produkt>wypust oświetlenia górnego wewnętrznego</produkt>
+			<cena>45,00 zł</cena>
+		</ceny1>
+		<ceny1>
+			<lp>8</lp>
+			<produkt>wypust oświetlenia kinkietu</produkt>
+			<cena>45,00 zł</cena>
+		</ceny1>
+		<ceny1>
+			<lp>9</lp>
+			<produkt>wypust oświetlenia zewnętrznego</produkt>
+			<cena>65,00 zł</cena>
+		</ceny1>
+	</mx:XMLList>
+	
+	<mx:XMLList id="ceny2" xmlns="">
+		<ceny2>
+			<lp>1</lp>
+			<produkt>jedno fazowe gniazdo elektryczne</produkt>
+			<cena>32,00 zł</cena>
+		</ceny2>
+		<ceny2>
+			<lp>2</lp>
+			<produkt>trójfazowe gniazdo elektryczne</produkt>
+			<cena>60,00 zł</cena>
+		</ceny2>
+		<ceny2>
+			<lp>3</lp>
+			<produkt>zasilanie wentylatora</produkt>
+			<cena>32,00 zł</cena>
+		</ceny2>
+		<ceny2>
+			<lp>4</lp>
+			<produkt>łącznik instalacyjny</produkt>
+			<cena>10,00 zł</cena>
+		</ceny2>
+		<ceny2>
+			<lp>5</lp>
+			<produkt>łącznik schodowy</produkt>
+			<cena>32,00 zł</cena>
+		</ceny2>
+		<ceny2>
+			<lp>6</lp>
+			<produkt>łącznik sterowania roletami elektrycznymi 
+z wyprowadzeniem pod silnik</produkt>
+			<cena>40,00 zł</cena>
+		</ceny2>
+		<ceny2>
+			<lp>7</lp>
+			<produkt>wypust oświetlenia górnego wewnętrznego</produkt>
+			<cena>24,00 zł</cena>
+		</ceny2>
+		<ceny2>
+			<lp>8</lp>
+			<produkt>wypust oświetlenia kinkietu</produkt>
+			<cena>24,00 zł</cena>
+		</ceny2>
+		<ceny2>
+			<lp>9</lp>
+			<produkt>wypust oświetlenia zewnętrznego</produkt>
+			<cena>37,00 zł</cena>
+		</ceny2>
+	</mx:XMLList>
+	
+	<mx:XMLList id="ceny3">
+		<ceny3>
+			<lp>1</lp>
+			<produkt>Gniazdo antenowe (RTV i RTV + SAT)</produkt>
+			<cena>32,00 zł</cena>
+		</ceny3>
+		<ceny3>
+			<lp>2</lp>
+			<produkt>Gniazdo telefoniczne (RJ 11 i RJ 12)</produkt>
+			<cena>32,00 zł</cena>
+		</ceny3>
+		<ceny3>
+			<lp>3</lp>
+			<produkt>Gniazdo sieciowe (RJ 45)</produkt>
+			<cena>32,00 zł</cena>
+		</ceny3>
+		<ceny3>
+			<lp>4</lp>
+			<produkt>Gniazdo głośnikowe</produkt>
+			<cena>32,00 zł</cena>
+		</ceny3>
+	</mx:XMLList>
+	
+	<mx:XMLList id="ceny4">
+		<ceny4>
+			<lp>1</lp>
+			<produkt>Punkt instalacji alarmowej</produkt>
+			<cena>33,00 zł</cena>
+		</ceny4>
+		<ceny4>
+			<lp>2</lp>
+			<produkt>Wypust pod kamerę</produkt>
+			<cena>48,00 zł</cena>
+		</ceny4>
+		<ceny4>
+			<lp>3</lp>
+			<produkt>Punkt domofonowy</produkt>
+			<cena>45,00 zł</cena>
+		</ceny4>
+		<ceny4>
+			<lp>4</lp>
+			<produkt>Punkt videodomofonowy</produkt>
+			<cena>55,00 zł</cena>
+		</ceny4>
+	</mx:XMLList>
+	
+	<mx:XMLList id="ceny5">
+		<ceny5>
+			<lp>1</lp>
+			<produkt>Jednofazowe gniazdo elektryczne 230 V</produkt>
+			<cena>6,00 zł</cena>
+		</ceny5>
+		<ceny5>
+			<lp>2</lp>
+			<produkt>Montaż gniazda trójfazowego 400 V</produkt>
+			<cena>15,00 zł</cena>
+		</ceny5>
+		<ceny5>
+			<lp>3</lp>
+			<produkt>Montaż łącznika instalacyjnego</produkt>
+			<cena>6,00 zł</cena>
+		</ceny5>
+		<ceny5>
+			<lp>4</lp>
+			<produkt>Montaż łącznika schodowego i krzyżowego</produkt>
+			<cena>6,00 zł</cena>
+		</ceny5>
+		<ceny5>
+			<lp>5</lp>
+			<produkt>Montaż łącznika sterowania roletami elektrycznymi</produkt>
+			<cena>6,00 zł</cena>
+		</ceny5>
+		<ceny5>
+			<lp>6</lp>
+			<produkt>Montaż lampy wewnętrznej</produkt>
+			<cena>14,00 zł</cena>
+		</ceny5>
+		<ceny5>
+			<lp>7</lp>
+			<produkt>Montaż lampy zewnętrznej</produkt>
+			<cena>14,00 zł</cena>
+		</ceny5>
+		<ceny5>
+			<lp>8</lp>
+			<produkt>Montaż gniazda antenowego (RTV + SAT)</produkt>
+			<cena>6,00 zł</cena>
+		</ceny5>
+		<ceny5>
+			<lp>9</lp>
+			<produkt>Montaż gniazda telefonicznego</produkt>
+			<cena>6,00 zł</cena>
+		</ceny5>
+		<ceny5>
+			<lp>10</lp>
+			<produkt>Montaż gniazda sieciowego</produkt>
+			<cena>6,00 zł</cena>
+		</ceny5>
+		<ceny5>
+			<lp>11</lp>
+			<produkt>Montaż gniazda głośnikowego</produkt>
+			<cena>6,00 zł</cena>
+		</ceny5>
+		<ceny5>
+			<lp>12</lp>
+			<produkt>Montaż wentylatora</produkt>
+			<cena>20,00 zł</cena>
+		</ceny5>
+		<ceny5>
+			<lp>13</lp>
+			<produkt>Montaż czujków</produkt>
+			<cena>20,00 zł</cena>
+		</ceny5>
+		<ceny5>
+			<lp>14</lp>
+			<produkt>Montaż domofonu</produkt>
+			<cena>50,00 zł</cena>
+		</ceny5>
+		<ceny5>
+			<lp>15</lp>
+			<produkt>Montaż videodomofonu</produkt>
+			<cena>80,00 zł</cena>
+		</ceny5>
+		<ceny5>
+			<lp>16</lp>
+			<produkt>Montaż szyny wyrównawczej, ochronnej</produkt>
+			<cena>25,00 zł</cena>
+		</ceny5>
+		<ceny5>
+			<lp>17</lp>
+			<produkt>Podłączenie kuchenki elektrycznej</produkt>
+			<cena>50,00 zł</cena>
+		</ceny5>
+	</mx:XMLList>
+	
+	<mx:XMLList id="ceny6">
+		<ceny6>
+			<lp>1</lp>
+			<produkt>Osadzenie rozdzielnicy 12 – 24</produkt>
+			<cena>75,00 zł</cena>
+		</ceny6>
+		<ceny6>
+			<lp>2</lp>
+			<produkt>Osadzenie rozdzielnicy 36 – 48</produkt>
+			<cena>150,00 zł</cena>
+		</ceny6>
+		<ceny6>
+			<lp>3</lp>
+			<produkt>Osadzenie rozdzielnicy 56 – 104</produkt>
+			<cena>200,00 zł</cena>
+		</ceny6>
+		<ceny6>
+			<lp>4</lp>
+			<produkt>Zamontowanie i podłączenie w rozdzielnicy 1 modułu</produkt>
+			<cena>12,00 zł</cena>
+		</ceny6>
+	</mx:XMLList>
+	
+	<mx:XMLList id="ceny7">
+		<ceny7>
+			<lp>1</lp>
+			<produkt>Pomiar impedancji pętli zwarcia</produkt>
+			<cena>7,00 zł</cena>
+		</ceny7>
+		<ceny7>
+			<lp>2</lp>
+			<produkt>Pomiar wyłączników RCD</produkt>
+			<cena>7,00 zł</cena>
+		</ceny7>
+		<ceny7>
+			<lp>3</lp>
+			<produkt>Pomiar rezystancji uziemienia</produkt>
+			<cena>25,00 zł</cena>
+		</ceny7>
+		<ceny7>
+			<lp>4</lp>
+			<produkt>Pomiar rezystancji izolacji w obwodzie 1 fazowym</produkt>
+			<cena>7,00 zł</cena>
+		</ceny7>
+		<ceny7>
+			<lp>5</lp>
+			<produkt>Pomiar rezystancji izolacji w obwodzie 3 fazowym</produkt>
+			<cena>12,00 zł</cena>
+		</ceny7>
+	</mx:XMLList>
+	
+	<mx:XMLList id="ceny8">
+		<ceny8>
+			<lp>1</lp>
+			<produkt>Wykop ręczny o głębokości 0,8m</produkt>
+			<cena>25,00 zł</cena>
+		</ceny8>
+		<ceny8>
+			<lp>2</lp>
+			<produkt>Wykonanie podsypki z piasku</produkt>
+			<cena>10,00 zł</cena>
+		</ceny8>
+		<ceny8>
+			<lp>3</lp>
+			<produkt>Ułożenie bednarki</produkt>
+			<cena>3,00 zł</cena>
+		</ceny8>
+		<ceny8>
+			<lp>4</lp>
+			<produkt>Ułożenie kabla o przekroju żyły do 25 mm2</produkt>
+			<cena>8,00 zł</cena>
+		</ceny8>
+		<ceny8>
+			<lp>5</lp>
+			<produkt>Ułożenie folii</produkt>
+			<cena>0,50 zł</cena>
+		</ceny8>
+		<ceny8>
+			<lp>6</lp>
+			<produkt>Zasypywanie wykopu</produkt>
+			<cena>10,00 zł</cena>
+		</ceny8>
+	</mx:XMLList>	
+	
+	<mx:Glow id="glowImage" duration="250" 
+	     alphaFrom="1" alphaTo=".3"
+	     blurXFrom="0.0" blurXTo="15"
+	     blurYFrom="0.0" blurYTo="15"
+	     color="#0a71a7"/>	
+	
+	<mx:VBox horizontalCenter="0" paddingTop="5">
+		<mx:Text width="490" text="Cennik" verticalCenter="0" x="0" fontWeight="bold"/>
+		<mx:Text width="490" text=" Poniżej przedstawiam cennik usług elektrycznych jakich oferuje moja firma. W zależności od wymogów i życzeń klienta wszystkie ceny są wcześniej ustalone indywidualnie z klientem. 
+W wyniku dojścia do realizacji danego zlecenia udzielam 10 % rabatu na wszelkie usługi jak również 40 % rabatu na pomiary elektryczne, a w budynkach jednorodzinnych pomiary gratis!! " verticalCenter="0" x="0"/>
+		
+		<mx:VBox height="7"/>
+		
+		<mx:Panel borderAlpha="0.69" 
+			borderThicknessBottom="2" 
+			borderThicknessLeft="2" 
+			borderThicknessRight="2" 
+			borderThicknessTop="2" 
+			highlightAlphas="[0.94, 0.33]" 
+			headerColors="[#ff6600, #ffff00]" 
+			headerHeight="30" 
+			dropShadowColor="#f6e500"
+			shadowDirection="left" 
+			cornerRadius="12"
+			fontWeight="bold"
+			title="Wykonanie instalacji elektrycznej z materiałem (ceny za 1 punk elektryczny)">
+			<mx:DataGrid dataProvider="{ceny1}" rowHeight="40" verticalAlign="0" rowCount="6">
+				<mx:columns>
+					<mx:DataGridColumn dataField="lp" headerText="lp" width="30"/>
+					<mx:DataGridColumn dataField="produkt" headerText="Produkt" width="400"/>
+					<mx:DataGridColumn dataField="cena" headerText="Cena" width="60"/>
+				</mx:columns>
+			</mx:DataGrid>
+		</mx:Panel>
+		
+		<mx:VBox height="7"/>
+		
+		<mx:Panel borderAlpha="0.69" 
+			borderThicknessBottom="2" 
+			borderThicknessLeft="2" 
+			borderThicknessRight="2" 
+			borderThicknessTop="2" 
+			highlightAlphas="[0.94, 0.33]" 
+			headerColors="[#ff6600, #ffff00]" 
+			headerHeight="30" 
+			dropShadowColor="#f6e500"
+			shadowDirection="left" 
+			cornerRadius="12"
+			fontWeight="bold"
+			title="Wykonanie instalacji elektrycznej bez materiału">
+			<mx:DataGrid dataProvider="{ceny2}" rowHeight="40" verticalAlign="0" rowCount="6">
+				<mx:columns>
+					<mx:DataGridColumn dataField="lp" headerText="lp" width="30"/>
+					<mx:DataGridColumn dataField="produkt" headerText="Produkt" width="400"/>
+					<mx:DataGridColumn dataField="cena" headerText="Cena" width="60"/>
+				</mx:columns>
+			</mx:DataGrid>
+		</mx:Panel>
+		
+		<mx:VBox height="7"/>
+		
+		<mx:Panel borderAlpha="0.69" 
+			borderThicknessBottom="2" 
+			borderThicknessLeft="2" 
+			borderThicknessRight="2" 
+			borderThicknessTop="2" 
+			highlightAlphas="[0.94, 0.33]" 
+			headerColors="[#ff6600, #ffff00]" 
+			headerHeight="30" 
+			dropShadowColor="#f6e500"
+			shadowDirection="left" 
+			cornerRadius="12"
+			fontWeight="bold"
+			title="Wykonanie instalacji teleinformatycznych i TV">
+			<mx:DataGrid dataProvider="{ceny3}" rowHeight="40" verticalAlign="0" rowCount="4">
+				<mx:columns>
+					<mx:DataGridColumn dataField="lp" headerText="lp" width="30"/>
+					<mx:DataGridColumn dataField="produkt" headerText="Produkt" width="400"/>
+					<mx:DataGridColumn dataField="cena" headerText="Cena" width="60"/>
+				</mx:columns>
+			</mx:DataGrid>
+		</mx:Panel>
+		
+		<mx:VBox height="7"/>
+		
+		<mx:Panel borderAlpha="0.69" 
+			borderThicknessBottom="2" 
+			borderThicknessLeft="2" 
+			borderThicknessRight="2" 
+			borderThicknessTop="2" 
+			highlightAlphas="[0.94, 0.33]" 
+			headerColors="[#ff6600, #ffff00]" 
+			headerHeight="30" 
+			dropShadowColor="#f6e500"
+			shadowDirection="left" 
+			cornerRadius="12"
+			fontWeight="bold"
+			title="Wykonanie instalacji dodatkowej (alarmy, kamery, domofony)">
+			<mx:DataGrid dataProvider="{ceny4}" rowHeight="40" verticalAlign="0" rowCount="4">
+				<mx:columns>
+					<mx:DataGridColumn dataField="lp" headerText="lp" width="30"/>
+					<mx:DataGridColumn dataField="produkt" headerText="Produkt" width="400"/>
+					<mx:DataGridColumn dataField="cena" headerText="Cena" width="60"/>
+				</mx:columns>
+			</mx:DataGrid>
+		</mx:Panel>
+		
+		<mx:VBox height="7"/>
+		
+		<mx:Panel borderAlpha="0.69" 
+			borderThicknessBottom="2" 
+			borderThicknessLeft="2" 
+			borderThicknessRight="2" 
+			borderThicknessTop="2" 
+			highlightAlphas="[0.94, 0.33]" 
+			headerColors="[#ff6600, #ffff00]" 
+			headerHeight="30" 
+			dropShadowColor="#f6e500"
+			shadowDirection="left" 
+			cornerRadius="12"
+			fontWeight="bold"
+			title="Montaż osprzętu elektrycznego">
+			<mx:DataGrid dataProvider="{ceny5}" rowHeight="40" verticalAlign="0" rowCount="6">
+				<mx:columns>
+					<mx:DataGridColumn dataField="lp" headerText="lp" width="30"/>
+					<mx:DataGridColumn dataField="produkt" headerText="Produkt" width="400"/>
+					<mx:DataGridColumn dataField="cena" headerText="Cena" width="60"/>
+				</mx:columns>
+			</mx:DataGrid>
+		</mx:Panel>
+		
+		<mx:VBox height="7"/>
+		
+		<mx:Panel borderAlpha="0.69" 
+			borderThicknessBottom="2" 
+			borderThicknessLeft="2" 
+			borderThicknessRight="2" 
+			borderThicknessTop="2" 
+			highlightAlphas="[0.94, 0.33]" 
+			headerColors="[#ff6600, #ffff00]" 
+			headerHeight="30" 
+			dropShadowColor="#f6e500"
+			shadowDirection="left" 
+			cornerRadius="12"
+			fontWeight="bold"
+			title="Montaż rozdzielnic (szt)">
+			<mx:DataGrid dataProvider="{ceny6}" rowHeight="40" verticalAlign="0" rowCount="4">
+				<mx:columns>
+					<mx:DataGridColumn dataField="lp" headerText="lp" width="30"/>
+					<mx:DataGridColumn dataField="produkt" headerText="Produkt" width="400"/>
+					<mx:DataGridColumn dataField="cena" headerText="Cena" width="60"/>
+				</mx:columns>
+			</mx:DataGrid>
+		</mx:Panel>
+		
+		<mx:VBox height="7"/>	
+		
+		<mx:Panel borderAlpha="0.69" 
+			borderThicknessBottom="2" 
+			borderThicknessLeft="2" 
+			borderThicknessRight="2" 
+			borderThicknessTop="2" 
+			highlightAlphas="[0.94, 0.33]" 
+			headerColors="[#ff6600, #ffff00]" 
+			headerHeight="30" 
+			dropShadowColor="#f6e500"
+			shadowDirection="left" 
+			cornerRadius="12"
+			fontWeight="bold"
+			title="Pomiary odbiorcze instalacji elektrycznej (szt)">
+			<mx:DataGrid dataProvider="{ceny7}" rowHeight="40" verticalAlign="0" rowCount="5">
+				<mx:columns>
+					<mx:DataGridColumn dataField="lp" headerText="lp" width="30"/>
+					<mx:DataGridColumn dataField="produkt" headerText="Produkt" width="400"/>
+					<mx:DataGridColumn dataField="cena" headerText="Cena" width="60"/>
+				</mx:columns>
+			</mx:DataGrid>
+		</mx:Panel>
+		
+		<mx:VBox height="7"/>
+		
+		<mx:Panel borderAlpha="0.69" 
+			borderThicknessBottom="2" 
+			borderThicknessLeft="2" 
+			borderThicknessRight="2" 
+			borderThicknessTop="2" 
+			highlightAlphas="[0.94, 0.33]" 
+			headerColors="[#ff6600, #ffff00]" 
+			headerHeight="30" 
+			dropShadowColor="#f6e500"
+			shadowDirection="left" 
+			cornerRadius="12"
+			fontWeight="bold"
+			title="Roboty ziemne (mb)">
+			<mx:DataGrid dataProvider="{ceny8}" rowHeight="40" verticalAlign="0" rowCount="6">
+				<mx:columns>
+					<mx:DataGridColumn dataField="lp" headerText="lp" width="30"/>
+					<mx:DataGridColumn dataField="produkt" headerText="Produkt" width="400"/>
+					<mx:DataGridColumn dataField="cena" headerText="Cena" width="60"/>
+				</mx:columns>
+			</mx:DataGrid>
+		</mx:Panel>
+		
+		<mx:VBox height="7"/>
+		
+		<mx:Text width="490" text="Wszystkie ceny podane jak wyżej są cenami netto!!"/>
+		
+	</mx:VBox>	
+</mx:Canvas>

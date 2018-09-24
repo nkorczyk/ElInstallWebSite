@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" creationComplete="MyXMLData.send()"> 
+
+	<mx:HTTPService id="MyXMLData" url="assets/XML/MyData.xml" result="resultHandler(event)" />
+	
+	<mx:Script>
+		<![CDATA[
+			import mx.effects.*;
+			import mx.core.SoundAsset;
+	
+			import flash.display.Sprite;
+			import flash.filters.BitmapFilterQuality;
+			import flash.filters.GlowFilter;
+			import mx.styles.StyleManager;
+			
+			import mx.collections.ArrayCollection;
+			import mx.rpc.events.ResultEvent;
+			import mx.events.EffectEvent;
+			import mx.core.UIComponent;
+			
+			import flash.events.MouseEvent;
+			import mx.rpc.http.HTTPService;
+			
+			[Bindable] private var MyCollection:ArrayCollection;
+			
+			private var rollOutvar:Number=0;
+	
+	        [Embed('assets/sounds/ding.mp3')]
+	        private var ding_mp3:Class;
+	        private var ding:SoundAsset = new ding_mp3() as SoundAsset;
+	        
+	        private function resultHandler(event:ResultEvent):void{
+	        	MyCollection=event.result.MyData.MyTopic;
+	        	myText.alpha=0;
+	        	myUrl1.alpha=0;
+	        	myUrl2.alpha=0;
+	        	myUrl3.alpha=0;
+	        	myUrl4.alpha=0;
+	        	myUrl5.alpha=0;
+	        	myUrl6.alpha=0;
+	        	myUrl7.alpha=0;
+	        	myUrl8.alpha=0;
+	        	myUrl9.alpha=0;
+	        	myUrl10.alpha=0;
+	        }
+			  
+		    private function mouseOverFunc(displayNum:Number):void{
+		    	if(rollOutvar==0){
+	        		centerImage.alpha=.5;
+	        		myCentCanvas.alpha=.5;
+	        		myUrl1.alpha=.5;
+	        		myUrl2.alpha=.5;
+	        		myUrl3.alpha=.5;
+	        		myUrl4.alpha=.5;
+	        		myUrl5.alpha=.5;
+	        		myUrl6.alpha=.5;
+	        		myUrl7.alpha=.5;
+	        		myUrl8.alpha=.5;
+	        		myUrl9.alpha=.5;
+	        		myUrl10.alpha=.5;
+	 			}
+	     
+	        	myTitle.text=MyCollection[displayNum].MyTitle;
+	        	//myUrl.text =MyCollection[displayNum].MyLink;
+	        	//myUrl2.text =MyCollection[displayNum].MyLink2;
+	        	myUrl1.label=MyCollection[displayNum].MyLink1;
+	        	myUrl2.label=MyCollection[displayNum].MyLink2;
+	        	myUrl3.label=MyCollection[displayNum].MyLink3;
+	        	myUrl4.label=MyCollection[displayNum].MyLink4;
+	        	myUrl5.label=MyCollection[displayNum].MyLink5;
+	        	myUrl6.label=MyCollection[displayNum].MyLink6;
+	        	myUrl7.label=MyCollection[displayNum].MyLink7;
+	        	myUrl8.label=MyCollection[displayNum].MyLink8;
+	        	myUrl9.label=MyCollection[displayNum].MyLink9;
+	        	myUrl10.label=MyCollection[displayNum].MyLink10;
+	        	myImage.source="images/"+MyCollection[displayNum].MyJPG;
+	        	myText.text=MyCollection[displayNum].MyText;
+		    }	
+		    
+		    private function mouseOutFunc():void{
+		    	if(rollOutvar==0){
+	        		centerImage.alpha=1;
+	        		myUrl1.alpha=1;
+	        		myUrl2.alpha=1;
+	        		myUrl3.alpha=1;
+	        		myUrl4.alpha=1;
+	        		myUrl5.alpha=1;
+	        		myUrl6.alpha=1;
+	        		myUrl7.alpha=1;
+	        		myUrl8.alpha=1;
+	        		myUrl9.alpha=1;
+	        		myUrl10.alpha=1;
+	       		}
+		    }	   
+		       
+		    private function mouseClickFunc():void{
+		    	ding.play();
+		    	if(rollOutvar==0){
+	        		centerImage.alpha=0;
+	        		rollOutvar=1;
+	        		myCentCanvas.alpha=1;
+	        		myUrl1.alpha=1;
+	        		myUrl2.alpha=1;
+	        		myUrl3.alpha=1;
+	        		myUrl4.alpha=1;
+	        		myUrl5.alpha=1;
+	        		myUrl6.alpha=1;
+	        		myUrl7.alpha=1;
+	        		myUrl8.alpha=1;
+	        		myUrl9.alpha=1;
+	        		myUrl10.alpha=1;
+	        	}
+	        	else{
+	        		centerImage.alpha=1;
+	        		myCentCanvas.alpha=0;
+	        		myUrl1.alpha=0;
+	        		myUrl2.alpha=0;
+	        		myUrl3.alpha=0;
+	        		myUrl4.alpha=0;
+	        		myUrl5.alpha=0;
+	        		myUrl6.alpha=0;
+	        		myUrl7.alpha=0;
+	        		myUrl8.alpha=0;
+	        		myUrl9.alpha=0;
+	        		myUrl10.alpha=0;
+	        		rollOutvar=0;
+	        	}
+		    }   
+		        
+			private function closeFunc():void{
+				centerImage.alpha=1;
+				myUrl1.alpha=1;
+				myUrl2.alpha=1;
+				myUrl3.alpha=1;
+				myUrl4.alpha=1;
+				myUrl5.alpha=1;
+				myUrl6.alpha=1;
+				myUrl7.alpha=1;
+				myUrl8.alpha=1;
+				myUrl9.alpha=1;
+				myUrl10.alpha=1;
+				rollOutvar=0;	
+			}
+			
+/* 			private function NavTo():void{
+				var request:URLRequest = new URLRequest(myUrl.text);
+				navigateToURL(request, "_blank");
+			} */
+			
+		]]>
+	</mx:Script>
+ 
+	<mx:Glow id="glowImage" duration="250" 
+		     alphaFrom="1" alphaTo=".3"
+		     blurXFrom="0.0" blurXTo="100"
+		     blurYFrom="0.0" blurYTo="100"
+		     color="#fffc00"/>
+	      
+	<mx:Glow id="unglowImage" duration="250" 
+		     alphaFrom=".3" alphaTo="1.0"
+		     blurXFrom="100.0" blurXTo="0.0"
+		     blurYFrom="100.0" blurYTo="0.0"
+		     color="#fffc00"/>	     
+		     
+	<mx:Glow id="glowRing" duration="250" 
+		     alphaFrom="1" alphaTo=".3"
+		     blurXFrom="0.0" blurXTo="18"
+		     blurYFrom="0.0" blurYTo="18"
+		     color="#FFFFFF"/>	     
+	
+	<mx:Fade id="fadeOut" duration="1000" alphaFrom="1.0" alphaTo="0.0"/>
+	<mx:Fade id="fadeIn" duration="1000" alphaFrom="0.0" alphaTo="1.0"/>
+		     
+	<mx:Canvas id="canvas1" width="800" height="569" 
+		verticalScrollPolicy="off" 
+		horizontalScrollPolicy="off" 
+		horizontalCenter="0" 
+		creationCompleteEffect="fadeIn" y="34">
+	
+		<mx:Canvas id="myCentCanvas" width="352" y="210" height="299" x="229">
+			<mx:Image id="myImage" x="2" y="34" width="100%" height="100%" filters="{[new DropShadowFilter(10,45)]}"/>
+			<mx:TextArea id="myText" x="3" y="156" width="346" height="140" fontSize="12"/>
+			<mx:Label id="myTitle" x="0" y="5" fontSize="12"/>
+		</mx:Canvas>
+		
+		<mx:Image y="110" visible="true" source="images/water.png" height="553" width="526" id="centerImage" x="143"/>
+		<mx:Image y="24" visible="true" source="images/ring.png" addedEffect="glowRing" x="58"/>
+		
+		<mx:Image y="23" source="images/image1.png"  toolTip="{MyCollection.getItemAt(0).ToolTip}" click="mouseClickFunc()" mouseOver="mouseOverFunc(0)" mouseOut="mouseOutFunc()" mouseDownEffect="{glowImage}" mouseUpEffect="{unglowImage}"  rollOverEffect="{glowImage}" rollOutEffect="{unglowImage}" x="319"/>
+		<mx:Image y="55" source="images/image2.png" toolTip="{MyCollection.getItemAt(1).ToolTip}" click="mouseClickFunc()" mouseOver="mouseOverFunc(1)" mouseOut="mouseOutFunc()" mouseDownEffect="{glowImage}" mouseUpEffect="{unglowImage}" rollOverEffect="{glowImage}" rollOutEffect="{unglowImage}" x="554"/>
+		<mx:Image y="226" source="images/image3.png" toolTip="{MyCollection.getItemAt(2).ToolTip}" click="mouseClickFunc()" mouseOver="mouseOverFunc(2)" mouseOut="mouseOutFunc()" mouseDownEffect="{glowImage}" mouseUpEffect="{unglowImage}" rollOverEffect="{glowImage}" rollOutEffect="{unglowImage}" x="692"/>
+		<mx:Image y="466" source="images/image4.png" toolTip="{MyCollection.getItemAt(3).ToolTip}" click="mouseClickFunc()" mouseOver="mouseOverFunc(3)" mouseOut="mouseOutFunc()" mouseDownEffect="{glowImage}" mouseUpEffect="{unglowImage}" rollOverEffect="{glowImage}" rollOutEffect="{unglowImage}" x="656"/>
+		<mx:Image y="479" source="images/image7.png" toolTip="{MyCollection.getItemAt(4).ToolTip}" click="mouseClickFunc()" mouseOver="mouseOverFunc(4)" mouseOut="mouseOutFunc()" mouseDownEffect="{glowImage}" mouseUpEffect="{unglowImage}" rollOverEffect="{glowImage}" rollOutEffect="{unglowImage}" x="79"/>
+		<mx:Image y="243" source="images/image8.png" toolTip="{MyCollection.getItemAt(5).ToolTip}" click="mouseClickFunc()" mouseOver="mouseOverFunc(5)" mouseOut="mouseOutFunc()" mouseDownEffect="{glowImage}" mouseUpEffect="{unglowImage}" rollOverEffect="{glowImage}" rollOutEffect="{unglowImage}" x="59"/>
+		<mx:Image y="64" source="images/image9.png" toolTip="{MyCollection.getItemAt(6).ToolTip}" click="mouseClickFunc()" mouseOver="mouseOverFunc(6)" mouseOut="mouseOutFunc()" mouseDownEffect="{glowImage}" mouseUpEffect="{unglowImage}" rollOverEffect="{glowImage}" rollOutEffect="{unglowImage}" x="123"/>
+		<mx:LinkButton fontSize="12" id="myUrl1" color="#030919" fontWeight="bold" styleName="myLinkButton" click="navigateToURL(new URLRequest(myUrl1.label), 'blank');" x="209" y="312" alpha="1"/>
+		<mx:LinkButton fontSize="12" id="myUrl2" color="#030919" fontWeight="bold" styleName="myLinkButton" click="navigateToURL(new URLRequest(myUrl2.label), 'blank');" x="209" y="333" alpha="1"/>
+		<mx:LinkButton fontSize="12" id="myUrl3" color="#030919" fontWeight="bold" styleName="myLinkButton" click="navigateToURL(new URLRequest(myUrl3.label), 'blank');" x="209" y="354" alpha="1"/>
+		<mx:LinkButton fontSize="12" id="myUrl4" color="#030919" fontWeight="bold" styleName="myLinkButton" click="navigateToURL(new URLRequest(myUrl4.label), 'blank');" x="209" y="375" alpha="1"/>
+		<mx:LinkButton fontSize="12" id="myUrl5" color="#030919" fontWeight="bold" styleName="myLinkButton" click="navigateToURL(new URLRequest(myUrl5.label), 'blank');" x="209" y="396" alpha="1"/>
+		<mx:LinkButton fontSize="12" id="myUrl6" color="#030919" fontWeight="bold" styleName="myLinkButton" click="navigateToURL(new URLRequest(myUrl6.label), 'blank');" x="209" y="417" alpha="1"/>
+		<mx:LinkButton fontSize="12" id="myUrl7" color="#030919" fontWeight="bold" styleName="myLinkButton" click="navigateToURL(new URLRequest(myUrl7.label), 'blank');" x="209" y="450" alpha="1"/>
+		<mx:LinkButton fontSize="12" id="myUrl8" color="#030919" fontWeight="bold" styleName="myLinkButton" click="navigateToURL(new URLRequest(myUrl8.label), 'blank');" x="209" y="471" alpha="1"/>
+		<mx:LinkButton fontSize="12" id="myUrl9" color="#030919" fontWeight="bold" styleName="myLinkButton" click="navigateToURL(new URLRequest(myUrl9.label), 'blank');" x="209" y="492" alpha="1"/>
+		<mx:LinkButton fontSize="12" id="myUrl10" color="#030919" fontWeight="bold" styleName="myLinkButton" click="navigateToURL(new URLRequest(myUrl10.label), 'blank');" x="209" y="513" alpha="1"/>
+		<!--<mx:LinkButton id="link" y="485" x="229" fontSize="12" color="#030919" fontWeight="bold" styleName="myLinkButton" click="navigateToURL(new URLRequest('http://www.wp.pl'), 'blank');" label="http://www.wp.pl" enabled="true"/>-->
+	</mx:Canvas>
+
+</mx:Canvas>
+

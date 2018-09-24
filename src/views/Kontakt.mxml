@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:VBox xmlns:mx="http://www.adobe.com/2006/mxml" verticalAlign="middle" horizontalAlign="center" height="424">
+	
+	<mx:Script>
+		<![CDATA[
+		import flash.net.*;
+    	public function sendMail(e:Event):void{
+        	var u:URLRequest = new URLRequest("mailto:" + "elekrto_monter@poczta.onet.pl");
+       		navigateToURL(u,"_self");
+     	}
+		]]>
+	</mx:Script>
+	
+	<mx:Glow id="glowImage" duration="250" 
+	     alphaFrom="1" alphaTo=".3"
+	     blurXFrom="0.0" blurXTo="30"
+	     blurYFrom="0.0" blurYTo="30"
+	     color="#0a71a7"/>
+	     
+	<mx:Glow id="glowImage2" duration="250" 
+	     alphaFrom="1" alphaTo=".3"
+	     blurXFrom="0.0" blurXTo="15"
+	     blurYFrom="0.0" blurYTo="15"
+	     color="#0a71a7"/>     	
+	
+	<mx:VBox paddingTop="5"/>
+	
+	<mx:Text fontWeight="bold" text="EL INSTAL" textDecoration="underline" addedEffect="glowImage"/>
+	<mx:Text fontWeight="bold" text="USŁUGI ELEKTRYCZNE" textDecoration="underline" addedEffect="glowImage"/>
+	<mx:Text fontWeight="bold" text="Krzysztof Wojtyczka" addedEffect="glowImage"/>		
+
+	<mx:Image source="assets/images/1.jpg" addedEffect="glowImage2" horizontalCenter="15" y="1"/>
+
+	<mx:Text id="t"/>	
+	<mx:Text text="34-173 Skawa 329"/>
+	<mx:Text text="NIP 735-203-13-22"/>
+	<mx:Text text="REGON 120527361"/>
+	<mx:Text text="kom.: (+48)501598653"/>
+	<mx:LinkButton 
+		label="elektro_monter@poczta.onet.pl" 
+		width="250" 
+		color="#F8E55B" 
+		click="sendMail(event)" 
+		rollOverEffect="glowImage" 
+		cornerRadius="12" 
+		paddingLeft="0" 
+		paddingRight="0" 
+		fontSize="13" 
+		fontWeight="normal"/>
+</mx:VBox>

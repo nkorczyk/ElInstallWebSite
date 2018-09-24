@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Canvas xmlns:mx="http://www.adobe.com/2006/mxml" 
+	xmlns:sbh="com.sebastiaanholtrop.components.coverflow.*" 
+	width="100%" height="100%"> 
+
+	<sbh:CoverFlow id="coverFlow" y="50" shape="planeshape"
+		width="100%" height="100%"
+		horizontalGap="{100}" 
+		angle="{78.44}" 
+		flippoint="{67.80}" 
+		selectedItemWidth="{192.26}"
+		cameraOffsetX="{0}"
+		cameraOffsetY="{410.64}">
+		
+		<mx:Image source="@Embed('assets/gallery/P3130233.JPG')" />
+		<mx:Image source="@Embed('assets/gallery/P3130237.JPG')" />
+		<mx:Image source="@Embed('assets/gallery/P3130238.JPG')" />
+		<mx:Image source="@Embed('assets/gallery/P3130239.JPG')" />
+		<mx:Image source="@Embed('assets/gallery/P3130241.JPG')" />
+		<mx:Image source="@Embed('assets/gallery/P3130242.JPG')" />
+		<mx:Image source="@Embed('assets/gallery/P3130248.JPG')" />
+		<mx:Image source="@Embed('assets/gallery/P3130254.JPG')" />
+		
+		<mx:Image source="@Embed('assets/gallery/P3280001.JPG')" />
+		<mx:Image source="@Embed('assets/gallery/P3280002.JPG')" />
+		<mx:Image source="@Embed('assets/gallery/PICT0012.JPG')" />
+		<mx:Image source="@Embed('assets/gallery/PICT0016.JPG')" />
+		<mx:Image source="@Embed('assets/gallery/PICT0018.JPG')" />
+		<mx:Image source="@Embed('assets/gallery/PICT0020.JPG')" />
+		<mx:Image source="@Embed('assets/gallery/PICT0021.JPG')" />
+		<mx:Image source="@Embed('assets/gallery/PICT0025.JPG')" />
+		<mx:Image source="@Embed('assets/gallery/PICT0038.JPG')" />
+		
+		<mx:Image source="@Embed('assets/gallery/P5080009.JPG')" />
+		<mx:Image source="@Embed('assets/gallery/P5080011.JPG')" />
+		<mx:Image source="@Embed('assets/gallery/P5080016.JPG')" />
+		<mx:Image source="@Embed('assets/gallery/P5080018.JPG')" />
+		<mx:Image source="@Embed('assets/gallery/P5080019.JPG')" />
+		<mx:Image source="@Embed('assets/gallery/P5080022.JPG')" />
+		<mx:Image source="@Embed('assets/gallery/P5080024.JPG')" />
+		<mx:Image source="@Embed('assets/gallery/P5080027.JPG')" />
+		<mx:Image source="@Embed('assets/gallery/P5080028.JPG')" />
+		<mx:Image source="@Embed('assets/gallery/P5080031.JPG')" />
+		<mx:Image source="@Embed('assets/gallery/P5080033.JPG')" />
+		<mx:Image source="@Embed('assets/gallery/P5080041.JPG')" />
+		<mx:Image source="@Embed('assets/gallery/P5200251.JPG')" />
+		<mx:Image source="@Embed('assets/gallery/P5200252.JPG')" />
+		<mx:Image source="@Embed('assets/gallery/P5200253.JPG')" />
+		<mx:Image source="@Embed('assets/gallery/P5200254.JPG')" />
+		<mx:Image source="@Embed('assets/gallery/P5200255.JPG')" />
+		<mx:Image source="@Embed('assets/gallery/P5200256.JPG')" />
+		<mx:Image source="@Embed('assets/gallery/P5200257.JPG')" />
+		<mx:Image source="@Embed('assets/gallery/P5200259.JPG')" />
+		<mx:Image source="@Embed('assets/gallery/PA050463.JPG')" />
+		<mx:Image source="@Embed('assets/gallery/PA050464.JPG')" />
+		
+		
+				
+	</sbh:CoverFlow>
+	
+	<mx:Panel x="400" y="400" visible="false">
+		
+	</mx:Panel>
+	
+</mx:Canvas>
